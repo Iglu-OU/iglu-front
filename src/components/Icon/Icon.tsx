@@ -22,7 +22,7 @@ const Icon: React.FC<IconProps> = ({ name, className }: IconProps) => {
       return null
   }
 
-  function BEM() {
+  function BEM(): string {
     return cn('icon', className)
   }
 }

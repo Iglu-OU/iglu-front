@@ -44,7 +44,7 @@ const Button: React.FC<ButtonProps> = ({
   onClick,
 }: ButtonProps) => {
   const ButtonTag = href ? 'a' : 'button'
-  const anchorProps = href && target === '_blank' ? { rel: 'noopener noreferrer', target: '_blank' } : { target }
+  const anchorProps = href && target === '_blank' ? { rel: 'noopener noreferrer', target } : { target }
 
   return (
     <ButtonTag className={BEM()} onClick={onClick} disabled={disabled} type={type} {...anchorProps}>
@@ -54,7 +54,7 @@ const Button: React.FC<ButtonProps> = ({
     </ButtonTag>
   )
 
-  function BEM() {
+  function BEM(): string {
     return cn('btn', `btn--${variant}`, `btn--${size}`, `btn--align-${align}`, {
       'btn--outlined': outlined,
       'btn--curved': curved,

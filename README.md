@@ -1,13 +1,13 @@
 # React Front
 
-Create React apps with no build configuration.
+Create React apps with no build configuration. React Front is extended version of [Create React App](https://github.com/facebook/create-react-app).
 
 ## Features
 
-- Quality tools (code): Typescript, Eslint, Prettier, Jest, Enzyme, Husky
-- Quality tools (UI): Storybook
-- Addons: SASS
-- Hosting: Netlify
+- Quality tools (code): [Typescript](http://www.typescriptlang.org/), [ESLint](https://eslint.org/), [Prettier](https://prettier.io/), [Jest](https://jestjs.io/), [Enzyme](https://airbnb.io/enzyme/), [Husky](https://github.com/typicode/husky)
+- Quality tools (UI): [Storybook](https://storybook.js.org/)
+- Addons: [SASS](https://sass-lang.com/)
+- Hosting: [Netlify](https://www.netlify.com)
 
 ## Available Scripts
 

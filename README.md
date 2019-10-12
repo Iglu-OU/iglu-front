@@ -1,6 +1,6 @@
-# React Front
+# Iglu Front
 
-Create React apps with no build configuration. React Front is extended version of [Create React App](https://github.com/facebook/create-react-app).
+Create React apps with no build configuration. Iglu Front is extended version of [Create React App](https://github.com/facebook/create-react-app).
 
 ## Features
 
@@ -11,6 +11,7 @@ Create React apps with no build configuration. React Front is extended version o
 
 ## Available Scripts
 
+- `yarn` - Install dependencies
 - `yarn start` - Runs the app in the development mode.
 - `yarn test` - Launches the test runner in the interactive watch mode.
 - `yarn build` - Builds the app for production to the `build` folder.

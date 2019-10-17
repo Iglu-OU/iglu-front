@@ -1,0 +1,25 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "antonaavik",
+      "name": "Anton Aavik",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/6421115?v=4",
+      "profile": "https://github.com/antonaavik",
+      "contributions": [
+        "code",
+        "doc",
+        "question"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "iglu-front",
+  "projectOwner": "Iglu-OU",
+  "repoType": "github",
+  "repoHost": "https://github.com"
+}

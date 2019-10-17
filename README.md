@@ -1,4 +1,5 @@
 # Iglu Front
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
 Create React apps with no build configuration. Iglu Front is extended version of [Create React App](https://github.com/facebook/create-react-app).
 
@@ -24,3 +25,19 @@ Create React apps with no build configuration. Iglu Front is extended version of
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/antonaavik"><img src="https://avatars3.githubusercontent.com/u/6421115?v=4" width="100px;" alt="Anton Aavik"/><br /><sub><b>Anton Aavik</b></sub></a><br /><a href="https://github.com/Iglu-OU/iglu-front/commits?author=antonaavik" title="Code">💻</a> <a href="https://github.com/Iglu-OU/iglu-front/commits?author=antonaavik" title="Documentation">📖</a> <a href="#question-antonaavik" title="Answering Questions">💬</a></td>
+  </tr>
+</table>
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!

@@ -34,6 +34,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "viljark",
+      "name": "Viljar Kärgenberg",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/1067120?v=4",
+      "profile": "http://viljark.github.io",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,

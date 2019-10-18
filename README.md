@@ -1,5 +1,5 @@
 # Iglu Front
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
 
 Create React apps with no build configuration. Iglu Front is extended version of [Create React App](https://github.com/facebook/create-react-app).
 
@@ -35,6 +35,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://github.com/antonaavik"><img src="https://avatars3.githubusercontent.com/u/6421115?v=4" width="100px;" alt="Anton Aavik"/><br /><sub><b>Anton Aavik</b></sub></a><br /><a href="https://github.com/Iglu-OU/iglu-front/commits?author=antonaavik" title="Code">💻</a> <a href="https://github.com/Iglu-OU/iglu-front/commits?author=antonaavik" title="Documentation">📖</a> <a href="#question-antonaavik" title="Answering Questions">💬</a> <a href="https://github.com/Iglu-OU/iglu-front/issues?q=author%3Aantonaavik" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://github.com/kasparsuvi1"><img src="https://avatars0.githubusercontent.com/u/23498484?v=4" width="100px;" alt="Kaspar Suvi"/><br /><sub><b>Kaspar Suvi</b></sub></a><br /><a href="https://github.com/Iglu-OU/iglu-front/commits?author=kasparsuvi1" title="Code">💻</a></td>
   </tr>
 </table>
 

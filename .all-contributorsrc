@@ -16,6 +16,15 @@
         "question",
         "bug"
       ]
+    },
+    {
+      "login": "kasparsuvi1",
+      "name": "Kaspar Suvi",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/23498484?v=4",
+      "profile": "https://github.com/kasparsuvi1",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,

@@ -1,45 +1,48 @@
-import * as React from 'react'
+import React from 'react'
+import { fireEvent, render } from '@testing-library/react'
 import Button from './Button'
-import { mount, configure } from 'enzyme'
-import Adapter from 'enzyme-adapter-react-16'
 
-configure({ adapter: new Adapter() })
+const buttonText = 'Click'
+const buttonId = 'button-tag'
 
-describe('<Button>', () => {
-  it('should output a button', () => {
-    const wrapper = mount(<Button />)
-    expect(wrapper.find('button')).toHaveLength(1)
-  })
+it('should output button with text', () => {
+  const { getByText } = render(<Button label={buttonText} />)
 
-  it('Should have type=button by default', () => {
-    const wrapper = mount(<Button />)
-    expect(
-      wrapper
-        .find('button')
-        .getDOMNode()
-        .getAttribute('type'),
-    ).toEqual('button')
-  })
+  expect(getByText(buttonText)).toBeTruthy()
+})
 
-  it('Should have the type if passed on', () => {
-    const wrapper = mount(<Button type="submit" />)
-    expect(
-      wrapper
-        .find('button')
-        .getDOMNode()
-        .getAttribute('type'),
-    ).toEqual('submit')
-  })
+it('Should have type=button by default', () => {
+  const { getByTestId } = render(<Button />)
 
-  it('Should output an anchor if called with a href', () => {
-    const wrapper = mount(<Button type="submit" href="/url" />)
-    expect(wrapper.find('a')).toHaveLength(1)
-  })
+  expect(getByTestId(buttonId)).toHaveProperty('type', 'button')
+})
 
-  it('Should trigger event when clicked', (done) => {
-    const wrapper = mount(<Button onClick={() => done()} />)
-    wrapper.find('button').simulate('click')
-  })
+it('Should have the type if passed on', () => {
+  const { getByTestId } = render(<Button type="submit" />)
 
-  it.skip('Should not trigger event when disabled', () => {})
+  expect(getByTestId(buttonId)).toHaveProperty('type', 'submit')
+})
+
+it('Should output an anchor if called with a href', () => {
+  const { container } = render(<Button type="submit" href="/url" />)
+
+  expect(container.getElementsByTagName('a').length).toEqual(1)
+  expect(container.getElementsByTagName('button').length).toEqual(0)
+})
+
+it('Should trigger event when clicked', () => {
+  const onClick = jest.fn()
+  const { getByTestId } = render(<Button onClick={() => onClick()} />)
+
+  fireEvent.click(getByTestId(buttonId))
+  expect(onClick).toHaveBeenCalled()
+})
+
+it('Should not trigger event when disabled', () => {
+  const onClick = jest.fn()
+
+  const { getByTestId } = render(<Button disabled={true} onClick={onClick} />)
+
+  fireEvent.click(getByTestId(buttonId))
+  expect(onClick).toBeCalledTimes(0)
 })

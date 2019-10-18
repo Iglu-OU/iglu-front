@@ -1,8 +1,27 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import Button from './Button'
+import Button, { ButtonProps } from './Button'
 import { LevelValues } from '../../common/semantics'
 import { ICON } from '../Icon/Icon'
+
+function renderButtonsList(btn: ButtonProps): JSX.Element {
+  return (
+    <ul className="list--unstyled list--inline">
+      <li>
+        <Button {...btn} variant={LevelValues.PRIMARY} iconLeft={ICON.ZOO} label="Button label" />
+      </li>
+      <li>
+        <Button {...btn} variant={LevelValues.SECONDARY} iconLeft={ICON.ZOO} label="Button label" />
+      </li>
+      <li>
+        <Button {...btn} variant={LevelValues.SUCCESS} iconRight={ICON.ZOO} label="Button label" />
+      </li>
+      <li>
+        <Button {...btn} variant={LevelValues.DANGER} iconRight={ICON.ZOO} label="Button label" />
+      </li>
+    </ul>
+  )
+}
 
 storiesOf('Button', module)
   .add('variants', () => (
@@ -10,90 +29,12 @@ storiesOf('Button', module)
       <p>
         <Button label="Button label" />
       </p>
-      <ul className="list--unstyled list--inline">
-        <li>
-          <Button variant={LevelValues.PRIMARY} iconLeft={ICON.ZOO} label="Button label" />
-        </li>
-        <li>
-          <Button variant={LevelValues.SECONDARY} iconLeft={ICON.ZOO} label="Button label" />
-        </li>
-        <li>
-          <Button variant={LevelValues.SUCCESS} iconRight={ICON.ZOO} label="Button label" />
-        </li>
-        <li>
-          <Button variant={LevelValues.DANGER} iconRight={ICON.ZOO} label="Button label" />
-        </li>
-      </ul>
-      <ul className="list--unstyled list--inline">
-        <li>
-          <Button outlined={true} variant={LevelValues.PRIMARY} iconRight={ICON.ZOO} label="Button label" />
-        </li>
-        <li>
-          <Button outlined={true} variant={LevelValues.SECONDARY} iconRight={ICON.ZOO} label="Button label" />
-        </li>
-        <li>
-          <Button outlined={true} variant={LevelValues.SUCCESS} iconLeft={ICON.ZOO} label="Button label" />
-        </li>
-        <li>
-          <Button outlined={true} variant={LevelValues.DANGER} iconLeft={ICON.ZOO} label="Button label" />
-        </li>
-      </ul>
-      <ul className="list--unstyled list--inline">
-        <li>
-          <Button curved={true} variant={LevelValues.PRIMARY} iconLeft={ICON.ZOO} label="Button label" />
-        </li>
-        <li>
-          <Button curved={true} variant={LevelValues.SECONDARY} iconLeft={ICON.ZOO} label="Button label" />
-        </li>
-        <li>
-          <Button curved={true} variant={LevelValues.SUCCESS} iconRight={ICON.ZOO} label="Button label" />
-        </li>
-        <li>
-          <Button curved={true} variant={LevelValues.DANGER} iconRight={ICON.ZOO} label="Button label" />
-        </li>
-      </ul>
-      <ul className="list--unstyled list--inline">
-        <li>
-          <Button rounded={true} variant={LevelValues.PRIMARY} iconRight={ICON.ZOO} label="Button label" />
-        </li>
-        <li>
-          <Button rounded={true} variant={LevelValues.SECONDARY} iconRight={ICON.ZOO} label="Button label" />
-        </li>
-        <li>
-          <Button rounded={true} variant={LevelValues.SUCCESS} iconLeft={ICON.ZOO} label="Button label" />
-        </li>
-        <li>
-          <Button rounded={true} variant={LevelValues.DANGER} iconLeft={ICON.ZOO} label="Button label" />
-        </li>
-      </ul>
-      <ul className="list--unstyled list--inline">
-        <li>
-          <Button size="sm" rounded={true} variant={LevelValues.PRIMARY} iconLeft={ICON.ZOO} label="Button label" />
-        </li>
-        <li>
-          <Button size="sm" rounded={true} variant={LevelValues.SECONDARY} iconLeft={ICON.ZOO} label="Button label" />
-        </li>
-        <li>
-          <Button size="sm" rounded={true} variant={LevelValues.SUCCESS} iconRight={ICON.ZOO} label="Button label" />
-        </li>
-        <li>
-          <Button size="sm" rounded={true} variant={LevelValues.DANGER} iconRight={ICON.ZOO} label="Button label" />
-        </li>
-      </ul>
-      <ul className="list--unstyled list--inline">
-        <li>
-          <Button size="lg" curved={true} variant={LevelValues.PRIMARY} iconRight={ICON.ZOO} label="Button label" />
-        </li>
-        <li>
-          <Button size="lg" curved={true} variant={LevelValues.SECONDARY} iconRight={ICON.ZOO} label="Button label" />
-        </li>
-        <li>
-          <Button size="lg" curved={true} variant={LevelValues.SUCCESS} iconLeft={ICON.ZOO} label="Button label" />
-        </li>
-        <li>
-          <Button size="lg" curved={true} variant={LevelValues.DANGER} iconLeft={ICON.ZOO} label="Button label" />
-        </li>
-      </ul>
+      {renderButtonsList({})}
+      {renderButtonsList({ outlined: true })}
+      {renderButtonsList({ curved: true })}
+      {renderButtonsList({ rounded: true })}
+      {renderButtonsList({ rounded: true, size: 'sm' })}
+      {renderButtonsList({ rounded: true, size: 'lg' })}
       <ul className="list--unstyled list--inline">
         <li>
           <Button size="sm" curved={true} variant={LevelValues.PRIMARY} iconRight={ICON.ZOO} />

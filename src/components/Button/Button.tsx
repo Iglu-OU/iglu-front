@@ -47,7 +47,14 @@ const Button: React.FC<ButtonProps> = ({
   const anchorProps = href && target === '_blank' ? { rel: 'noopener noreferrer', target } : { target }
 
   return (
-    <ButtonTag className={BEM()} onClick={onClick} disabled={disabled} type={type} {...anchorProps}>
+    <ButtonTag
+      className={BEM()}
+      onClick={onClick}
+      disabled={disabled}
+      type={type}
+      data-testid="button-tag"
+      {...anchorProps}
+    >
       {!!iconLeft && <Icon className="btn__icon" name={iconLeft} />}
       {!!label && <span className="btn__label">{label}</span>}
       {!!iconRight && <Icon className="btn__icon" name={iconRight} />}

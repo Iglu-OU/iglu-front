@@ -4,7 +4,7 @@ Create React apps with no build configuration. Iglu Front is extended version of
 
 ## Features
 
-- Quality tools (code): [Typescript](http://www.typescriptlang.org/), [ESLint](https://eslint.org/), [Prettier](https://prettier.io/), [Jest](https://jestjs.io/), [Enzyme](https://airbnb.io/enzyme/), [Husky](https://github.com/typicode/husky)
+- Quality tools (code): [Typescript](http://www.typescriptlang.org/), [ESLint](https://eslint.org/), [Prettier](https://prettier.io/), [Jest](https://jestjs.io/), [React-testing-library](https://testing-library.com/docs/react-testing-library/intro), [Husky](https://github.com/typicode/husky)
 - Quality tools (UI): [Storybook](https://storybook.js.org/)
 - Addons: [SASS](https://sass-lang.com/)
 - Hosting: [Netlify](https://www.netlify.com)
@@ -14,6 +14,7 @@ Create React apps with no build configuration. Iglu Front is extended version of
 - `yarn` - Install dependencies
 - `yarn start` - Runs the app in the development mode.
 - `yarn test` - Launches the test runner in the interactive watch mode.
+- `yarn test:coverage` - Runs the tests once.
 - `yarn build` - Builds the app for production to the `build` folder.
 - `yarn lint` - Look for linting errors
 - `yarn lint:fix` - Look and fix linting errors

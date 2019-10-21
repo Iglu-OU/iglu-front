@@ -39,7 +39,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "test:coverage": "CI=true react-scripts test --env=jsdom",
+    "test:coverage": "cross-env CI=true react-scripts test --env=jsdom",
     "lint": "eslint ./src/**/*.{ts,tsx}",
     "lint:fix": "eslint ./src/**/*.{ts,tsx} --fix",
     "storybook": "start-storybook",

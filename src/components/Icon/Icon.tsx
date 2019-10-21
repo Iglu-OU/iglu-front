@@ -17,7 +17,7 @@ export interface IconProps {
 const Icon: React.FC<IconProps> = ({ name, className }: IconProps) => {
   switch (name) {
     case ICON.ZOO:
-      return <Zoo className={BEM()} />
+      return <Zoo data-testid="icon" className={BEM()} />
     default:
       return null
   }

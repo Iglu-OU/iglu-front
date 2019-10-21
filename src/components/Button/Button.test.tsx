@@ -14,7 +14,7 @@ it('should output button with text', () => {
 it('Should have type=button by default', () => {
   const { getByTestId } = render(<Button />)
 
-  expect(getByTestId(buttonId)).toHaveProperty('type', 'button1')
+  expect(getByTestId(buttonId)).toHaveProperty('type', 'button')
 })
 
 it('Should have the type if passed on', () => {

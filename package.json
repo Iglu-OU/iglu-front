@@ -32,10 +32,14 @@
     "ts-jest": "^24.1.0",
     "typescript": "3.6.4"
   },
+  "devDependencies": {
+    "cross-env": "^6.0.3"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:coverage": "CI=true react-scripts test --env=jsdom",
     "lint": "eslint ./src/**/*.{ts,tsx}",
     "lint:fix": "eslint ./src/**/*.{ts,tsx} --fix",
     "storybook": "start-storybook",
@@ -58,7 +62,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged && npm run test:coverage"
     }
   },
   "lint-staged": {

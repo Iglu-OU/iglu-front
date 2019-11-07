@@ -25,4 +25,4 @@ deploy:
 after_success:
   - chmod +x ./publish.sh
   - ./publish.sh
-  - yarn lh -- --perf=70 --seo=70 --a11y=70 --bp=70 --pwa=70 http://iglu-react-front.netlify.com
+  - yarn lh -- --perf=90 --seo=90 --a11y=70 --bp=90 --pwa=70 http://iglu-react-front.netlify.com

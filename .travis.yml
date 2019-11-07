@@ -1,0 +1,28 @@
+language: node_js
+node_js:
+  - '12.9.1'
+cache: yarn
+
+script:
+  - echo 'Build starts'
+  - echo 'Installing Deps'
+  - yarn
+  - echo 'Testing'
+  - yarn lint
+  - yarn test
+
+before_deploy:
+  - npm install netlify-cli -g
+  - yarn build
+
+deploy:
+  provider: script
+  script: netlify deploy -s $NETLIFY_SITE_ID -auth $NETLIFY_ACCESS_TOKEN -p ./build
+  skip_cleanup: false
+  on:
+    branch: master
+
+after_success:
+  - chmod +x ./publish.sh
+  - ./publish.sh
+  - yarn lh -- --perf=90 --seo=90 --a11y=70 --bp=90 --pwa=70 http://iglu-react-front.netlify.com

@@ -27,6 +27,7 @@
     "jest-cli": "^24.9.0",
     "jest-junit": "^8.0.0",
     "jest-mock-now": "^1.2.1",
+    "lighthousebot": "https://github.com/GoogleChromeLabs/lighthousebot",
     "lint-staged": "^9.4.2",
     "node-sass": "^4.12.0",
     "prettier": "^1.18.2",
@@ -43,7 +44,8 @@
     "lint": "eslint ./src/**/*.{ts,tsx}",
     "lint:fix": "eslint ./src/**/*.{ts,tsx} --fix",
     "storybook": "start-storybook",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lh": "lighthousebot -- https://iglu-react-front.netlify.com/"
   },
   "eslintConfig": {
     "extends": "react-app"

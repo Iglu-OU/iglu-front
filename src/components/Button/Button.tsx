@@ -2,7 +2,7 @@ import './Button.scss'
 
 import React from 'react'
 import cn from 'classnames'
-import Icon from '../Icon/Icon'
+import Icon, { ICON } from '../Icon/Icon'
 import { Size } from '../../common/semantics'
 
 export interface ButtonProps {
@@ -11,8 +11,8 @@ export interface ButtonProps {
   disabled?: boolean
   type?: 'button' | 'submit'
   label?: string
-  iconRight?: string
-  iconLeft?: string
+  iconRight?: ICON
+  iconLeft?: ICON
   variant?: string
   size?: Size
   outlined?: boolean

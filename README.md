@@ -26,6 +26,9 @@ Create React apps with no build configuration. Iglu Front is extended version of
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 To learn React, check out the [React documentation](https://reactjs.org/).
 
+## Guidelines
+- [Front-End: System of components](https://medium.com/@antonaavik/front-end-system-of-components-aac7cc45f05)
+
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):

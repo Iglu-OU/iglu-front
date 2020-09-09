@@ -1,10 +1,11 @@
-import React from 'react'
 import { storiesOf } from '@storybook/react'
-import Button, { ButtonProps } from './Button'
+import React from 'react'
+
 import { LevelValues } from '../../common/semantics'
 import { ICON } from '../Icon/Icon'
+import Button, { ButtonProps } from './Button'
 
-function renderButtonsList(btn: ButtonProps): JSX.Element {
+function renderButtonsList(btn: ButtonProps): React.ReactElement {
   return (
     <ul className="list--unstyled list--inline">
       <li>

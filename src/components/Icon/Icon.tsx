@@ -1,14 +1,15 @@
-import './Icon.scss'
-
-import React from 'react'
 import cn from 'classnames'
+import React from 'react'
 
 import { ReactComponent as Zoo } from './Icons/zoo.svg'
+
+import './Icon.scss'
 
 export const ICON = {
   ZOO: Zoo,
 }
 
+// eslint-disable-next-line
 export type ICON = EnumLiteralsOf<typeof ICON>
 export interface IconProps {
   name: ICON

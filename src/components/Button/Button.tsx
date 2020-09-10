@@ -1,9 +1,10 @@
-import './Button.scss'
-
-import React from 'react'
 import cn from 'classnames'
-import Icon, { ICON } from '../Icon/Icon'
+import React from 'react'
+
 import { Size } from '../../common/semantics'
+import Icon, { ICON } from '../Icon/Icon'
+
+import './Button.scss'
 
 export interface ButtonProps {
   href?: string

@@ -16,10 +16,7 @@ Create React apps with no build configuration. Iglu Front is extended version of
 - `yarn test` - Launches the test runner in the interactive watch mode.
 - `yarn test:coverage` - Runs the tests once.
 - `yarn build` - Builds the app for production to the `build` folder.
-- `yarn lint` - Look for linting errors
-- `yarn lint:fix` - Look and fix linting errors
-- `yarn storybook` - manage UI components
-- `yarn eject` - will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them.
+- `yarn lint` - Look and fix linting errors
 
 ## Learn More
 
@@ -27,6 +24,7 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 To learn React, check out the [React documentation](https://reactjs.org/).
 
 ## Guidelines
+
 - [Front-End: System of components](https://medium.com/@antonaavik/front-end-system-of-components-aac7cc45f05)
 
 ## Contributors ✨

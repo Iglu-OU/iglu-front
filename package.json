@@ -10,7 +10,8 @@
     "lint": "eslint ./src/**/*.{ts,tsx} --fix",
     "storybook": "start-storybook -p 6006 -s public",
     "lh": "lighthousebot -- https://iglu-react-front.netlify.com/",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "prepare": "husky install"
   },
   "dependencies": {
     "react": "17.0.2",
@@ -44,9 +45,8 @@
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-simple-import-sort": "7.0.0",
     "eslint-plugin-testing-library": "^4.12.0",
-    "husky": "^4.3.0",
+    "husky": "^7.0.0",
     "lighthousebot": "https://github.com/GoogleChromeLabs/lighthousebot",
-    "lint-staged": "^10.3.0",
     "prettier": "^2.1.1",
     "sass": "^1.38.1",
     "typescript": "^4.0.2"
@@ -62,11 +62,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged && npm run test:coverage"
-    }
   },
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx}": "eslint --fix",

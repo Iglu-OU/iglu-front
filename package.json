@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "react-scripts start",
+    "start": "yarn storybook",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "test:coverage": "cross-env CI=true react-scripts test --env=jsdom",

@@ -24,3 +24,53 @@ $horizontal-spacing-thin: 0 $spacing-thin;
 
 /* Icons */
 $icon-size: (1em * $line-height); // font-size * line-height (helps to align icons correctly and consistently)
+
+// Snowflake design system
+// Todo font-size and line-height sizes to REM's
+
+:root {
+  --font-family: '';
+  --body-size: 16px;
+  --h1-size-desktop: 48px;
+  --h2-size-desktop: 40px;
+  --h3-size-desktop: 32px;
+  --h4-size-desktop: 24px;
+  --h5-size-desktop: 18px;
+  --h1-size-tablet: 40px;
+  --h2-size-tablet: 32px;
+  --h3-size-tablet: 24px;
+  --h4-size-tablet: 20px;
+  --h5-size-tablet: 16px;
+  --h1-size: 40px;
+  --h2-size: 32px;
+  --h3-size: 24px;
+  --h4-size: 20px;
+  --h5-size: 16px;
+  --h1-line-height-desktop: 48px;
+  --h2-line-height-desktop: 48px;
+  --h3-line-height-desktop: 40px;
+  --h4-line-height-desktop: 32px;
+  --h5-line-height-desktop: 24px;
+  --h1-line-height-tablet: 48px;
+  --h2-line-height-tablet: 40px;
+  --h3-line-height-tablet: 32px;
+  --h4-line-height-tablet: 28px;
+  --h5-line-height-tablet: 24px;
+  --h1-line-height: 48px;
+  --h2-line-height: 40px;
+  --h3-line-height: 32px;
+  --h4-line-height: 28px;
+  --h5-line-height: 24px;
+  --small-font-size: 14px;
+  --small-line-height: 16px;
+  --break-sm: 768px;
+  --break-md: 1024px;
+}
+
+// Small (600px - 799px)
+// Use the modifier "-sm" when defining classes.
+$break-sm: 600px;
+
+// Medium (800px - 999px)
+// Use the modifier "-md" when defining classes.
+$break-md: 800px;

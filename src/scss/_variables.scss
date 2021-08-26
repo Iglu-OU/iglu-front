@@ -60,4 +60,14 @@ $horizontal-spacing-thin: 0 $spacing-thin;
 
   --break-sm: 768px;
   --break-md: 1024px;
+
+  --space-xxxs: 0.125rem; // 2px
+  --space-xxs: 0.25rem; // 16px
+  --space-xs: 0.5rem; // 8px
+  --space-s: 0.75rem; // 12px
+  --space-m: 1rem; // 16px
+  --space-l: 1.5rem; // 24px
+  --space-xl: 2rem; // 32px
+  --space-xxl: 3rem; // 48px
+  --space-xxxl: 4rem; // 64px
 }

@@ -1,28 +1,47 @@
-.text-bold {
+.text + .text {
+  margin-top: 1em;
+}
+
+.text:last-of-type {
+  margin-bottom: 0;
+}
+
+.text:first-of-type {
+  margin-top: 0;
+}
+
+b,
+.text--bold {
   font-weight: 700;
 }
 
-.text-capitalize {
+.text--capitalize {
   text-transform: capitalize;
 }
 
-.text-italic {
+.text--italic {
   font-style: italic;
 }
 
-.text-linethrough {
+.text--linethrough {
   text-decoration: line-through;
 }
 
-.text-uppercase {
+.text--uppercase {
   text-transform: uppercase;
 }
 
-.text-lowercase {
+.text--lowercase {
   text-transform: lowercase;
 }
 
-// TODO Helper function?
+small,
+.text--small {
+  font-size: var(--small-font-size);
+  line-height: var(--small-line-height);
+}
+
+// TODO: Helper function?
 h1,
 .h1 {
   font-size: var(--h1-size);
@@ -99,6 +118,6 @@ h5,
 
   @media (min-width: var(--break-md)) {
     font-size: var(--h5-size-desktop);
-    line-height: var(--h5-line-height-desk--h5-size-desktop);
+    line-height: var(--h5-line-height-desktop);
   }
 }

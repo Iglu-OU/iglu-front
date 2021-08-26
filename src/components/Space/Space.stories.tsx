@@ -1,13 +1,13 @@
 import { Meta, Story } from '@storybook/react'
 
-import Space, { SpaceProps } from './Space'
+import Space, { ISpaceProps } from './Space'
 
 export default {
   title: 'Space',
   component: Space,
 } as Meta
 
-const Template: Story<SpaceProps> = (args) => (
+const Template: Story<ISpaceProps> = (args) => (
   <Space {...args}>
     <div>Content</div>
     <div>Content</div>

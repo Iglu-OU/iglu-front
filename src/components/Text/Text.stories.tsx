@@ -1,9 +1,18 @@
-import { storiesOf } from '@storybook/react'
-import React from 'react'
+import { Meta, Story } from '@storybook/react'
 
-import Text from './Text'
+import Text, { ITextProps } from './Text'
 
-storiesOf('Text', module).add('variants', () => (
+export default {
+  title: 'Text',
+  component: Text,
+} as Meta
+
+const Template: Story<ITextProps> = (args) => <Text {...args}>The story of Snowflake</Text>
+
+export const Default = Template.bind({})
+Default.args = {}
+
+export const Examples = () => (
   <div>
     <Text element="h1">The story of Snowflake</Text>
     <Text element="h2">Lorem ipsum dolor sit amet</Text>
@@ -26,4 +35,4 @@ storiesOf('Text', module).add('variants', () => (
     </Text>
     <Text>There are also other features. The ice can be frozen, there’s a pinball feature.</Text>
   </div>
-))
+)

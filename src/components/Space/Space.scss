@@ -1,0 +1,33 @@
+.space {
+  display: grid;
+}
+.space--none {
+  row-gap: 0;
+}
+.space--xxxs {
+  row-gap: var(--space-xxxs);
+}
+.space-xxs {
+  row-gap: var(--space-xxs);
+}
+.space-xs {
+  row-gap: var(--space-xs);
+}
+.space--s {
+  row-gap: var(--space-s);
+}
+.space--m {
+  row-gap: var(--space-m);
+}
+.space--l {
+  row-gap: var(--space-l);
+}
+.space--xl {
+  row-gap: var(--space-xl);
+}
+.space-xxl {
+  row-gap: var(--space-xxl);
+}
+.space--xxxl {
+  row-gap: var(--space-xxxl);
+}

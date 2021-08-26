@@ -1,6 +1,6 @@
 import { Meta, Story } from '@storybook/react'
 
-import Space, { ISpaceProps } from './Space'
+import Space, { SpaceProps } from './Space'
 
 export default {
   title: 'Space',

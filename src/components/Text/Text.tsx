@@ -72,12 +72,12 @@ const Text = (props: ITextProps): JSX.Element => {
 
   const BEM = (): string => {
     return cn(className, `text text--${size}`, {
-      'text-bold': bold,
-      'text-capitalize': capitalize,
-      'text-italic': italic,
-      'text-linethrough': linethrough,
-      'text-uppercase': uppercase,
-      'text-lowercase': lowercase,
+      'text--bold': bold,
+      'text--capitalize': capitalize,
+      'text--italic': italic,
+      'text--linethrough': linethrough,
+      'text--uppercase': uppercase,
+      'text--lowercase': lowercase,
     })
   }
 

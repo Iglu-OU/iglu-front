@@ -9,7 +9,6 @@
     "test:coverage": "cross-env CI=true react-scripts test --env=jsdom",
     "lint": "eslint ./src/**/*.{ts,tsx} --fix",
     "storybook": "start-storybook -p 6006 -s public",
-    "lh": "lighthousebot -- https://iglu-react-front.netlify.com/",
     "build-storybook": "build-storybook -s public",
     "prepare": "husky install"
   },

@@ -4,11 +4,11 @@
     "prettier",
     "plugin:jsx-a11y/recommended",
     "plugin:prettier/recommended",
-    "plugin:testing-library/recommended"
+    "plugin:testing-library/react"
   ],
   "plugins": ["testing-library", "jsx-a11y", "simple-import-sort"],
   "rules": {
-    "simple-import-sort/sort": [
+    "simple-import-sort/imports": [
       "error",
       {
         "groups": [

@@ -1,8 +1,20 @@
-import { Story } from '@storybook/react'
-import React from 'react'
+import { Meta, Story } from '@storybook/react'
 
 import Space, { SpaceProps } from './Space'
 
-const Template: Story<SpaceProps> = (args: SpaceProps) => <Space {...args} />
+export default {
+  title: 'Space',
+  component: Space,
+} as Meta
 
-export const Primary = Template.bind({})
+const Template: Story<SpaceProps> = (args) => (
+  <Space {...args}>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+  </Space>
+)
+
+export const Default = Template.bind({})
+Default.args = { size: 'm', tag: 'div' }

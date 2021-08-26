@@ -8,7 +8,7 @@ export interface SpaceProps {
   className?: string
 }
 
-const Space: React.FC<SpaceProps> = React.memo(({ tag, size = 16, className = '', children }) => {
+const Space: React.FC<SpaceProps> = React.memo(({ tag, size = 'm', className = '', children }) => {
   const Tag = tag ? tag : 'div'
   return <Tag className={`space space--${size} ${className}`}>{children}</Tag>
 })

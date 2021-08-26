@@ -23,8 +23,9 @@ a {
 
 svg {
   display: block;
-  width: $icon-size;
-  height: $icon-size;
+  //TODO: Define $icon-size and uncomment these fields
+  //width: $icon-size;
+  //height: $icon-size;
   fill: currentColor;
 }
 

@@ -1,4 +1,4 @@
-import { fireEvent, render } from '@testing-library/react'
+import { fireEvent, render, screen } from '@testing-library/react'
 import React from 'react'
 
 import Button from './Button'
@@ -7,43 +7,45 @@ const buttonText = 'Click'
 const buttonId = 'button-tag'
 
 it('should output button with text', () => {
-  const { getByText } = render(<Button label={buttonText} />)
+  render(<Button label={buttonText} />)
 
-  expect(getByText(buttonText)).toBeTruthy()
+  expect(screen.getByText(buttonText)).toBeTruthy()
 })
 
 it('Should have type=button by default', () => {
-  const { getByTestId } = render(<Button />)
+  render(<Button />)
 
-  expect(getByTestId(buttonId)).toHaveProperty('type', 'button')
+  expect(screen.getByTestId(buttonId)).toHaveProperty('type', 'button')
 })
 
 it('Should have the type if passed on', () => {
-  const { getByTestId } = render(<Button type="submit" />)
+  render(<Button type="submit" />)
 
-  expect(getByTestId(buttonId)).toHaveProperty('type', 'submit')
+  expect(screen.getByTestId(buttonId)).toHaveProperty('type', 'submit')
 })
 
 it('Should output an anchor if called with a href', () => {
   const { container } = render(<Button type="submit" href="/url" />)
 
+  // eslint-disable-next-line testing-library/no-container,testing-library/no-node-access
   expect(container.getElementsByTagName('a').length).toEqual(1)
+  // eslint-disable-next-line testing-library/no-container,testing-library/no-node-access
   expect(container.getElementsByTagName('button').length).toEqual(0)
 })
 
 it('Should trigger event when clicked', () => {
   const onClick = jest.fn()
-  const { getByTestId } = render(<Button onClick={() => onClick()} />)
+  render(<Button onClick={() => onClick()} />)
 
-  fireEvent.click(getByTestId(buttonId))
+  fireEvent.click(screen.getByTestId(buttonId))
   expect(onClick).toHaveBeenCalled()
 })
 
 it('Should not trigger event when disabled', () => {
   const onClick = jest.fn()
 
-  const { getByTestId } = render(<Button disabled={true} onClick={onClick} />)
+  render(<Button disabled={true} onClick={onClick} />)
 
-  fireEvent.click(getByTestId(buttonId))
+  fireEvent.click(screen.getByTestId(buttonId))
   expect(onClick).toBeCalledTimes(0)
 })
